@@ -42,6 +42,9 @@ importers:
       globals:
         specifier: ^16.5.0
         version: 16.5.0
+      hybrid-types:
+        specifier: github:ilkkamtk/hybrid-types
+        version: https://codeload.github.com/ilkkamtk/hybrid-types/tar.gz/19fc00377ed781a455cf360b588a0c880aeb8b4f
       typescript:
         specifier: ~5.9.3
         version: 5.9.3
@@ -845,6 +848,10 @@ packages:
 
   hermes-parser@0.25.1:
     resolution: {integrity: sha512-6pEjquH3rqaI6cYAXYPcz9MS4rY6R4ngRgrgfDshRptUZIc3lw0MCIJIGDj9++mfySOuPTHB4nrSW99BCvOPIA==}
+
+  hybrid-types@https://codeload.github.com/ilkkamtk/hybrid-types/tar.gz/19fc00377ed781a455cf360b588a0c880aeb8b4f:
+    resolution: {tarball: https://codeload.github.com/ilkkamtk/hybrid-types/tar.gz/19fc00377ed781a455cf360b588a0c880aeb8b4f}
+    version: 1.0.0
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -1868,6 +1875,8 @@ snapshots:
   hermes-parser@0.25.1:
     dependencies:
       hermes-estree: 0.25.1
+
+  hybrid-types@https://codeload.github.com/ilkkamtk/hybrid-types/tar.gz/19fc00377ed781a455cf360b588a0c880aeb8b4f: {}
 
   ignore@5.3.2: {}
 
