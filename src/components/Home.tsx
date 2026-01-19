@@ -1,5 +1,5 @@
 import type {MediaItem} from 'hybrid-types/DBTypes';
-import
+import MediaRow from './MediaRow';
 
 const mediaArray: MediaItem[] = [
   {
