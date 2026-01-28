@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react-swc';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/~rogerko/hybrid/react-routing/',
   test: {
     environment: 'jsdom',
     globals: true,
