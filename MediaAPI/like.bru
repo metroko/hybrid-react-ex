@@ -1,0 +1,21 @@
+meta {
+  name: like
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{mediaApi}}/api/v1/likes
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "media_id": 4
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: get list of likes by media id
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{mediaApi}}/api/v1/likes/bymedia/173
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

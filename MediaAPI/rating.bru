@@ -1,0 +1,22 @@
+meta {
+  name: rating
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{mediaApi}}/api/v1/ratings
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "rating_value": 3,
+      "media_id": 4
+  }
+}
+
+settings {
+  encodeUrl: true
+}

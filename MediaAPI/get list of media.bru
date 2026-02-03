@@ -1,0 +1,15 @@
+meta {
+  name: get list of media
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{mediaApi}}/api/v1/media
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

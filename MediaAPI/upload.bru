@@ -1,0 +1,29 @@
+meta {
+  name: upload
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{uploadApi}}/api/v1/upload
+  body: multipartForm
+  auth: bearer
+}
+
+headers {
+  x-access-token: your_token.eyJ1c2VyX2lkIjozNjAxLCJ1c2VybmFtZSI6Imlsa2thbXRrIiwiZW1haWwiOiJpbGtrYW10a0BtZXRyb3BvbGlhLmZpIiwiZnVsbF9uYW1lIjpudWxsLCJpc19hZG1pbiI6bnVsbCwidGltZV9jcmVhdGVkIjoiMjAyMy0wOC0yNVQxMTo1NTozMi4wMDBaIiwiaWF0IjoxNjkzNTY0MDk3LCJleHAiOjE2OTM2NTA0OTd9.Nsq6aRgDSHSOwSgWC2k-1FiOxXxv8CxbgY2NZ_-54-A
+}
+
+auth:bearer {
+  token: your_token
+}
+
+body:multipart-form {
+  file: @file(/Users/your_username/Downloads/kissa.jpg)
+  ~title: Ile testaa
+  ~description: Katotaan onnistuuko video.
+}
+
+settings {
+  encodeUrl: true
+}

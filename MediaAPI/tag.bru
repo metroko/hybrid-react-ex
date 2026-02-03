@@ -1,0 +1,22 @@
+meta {
+  name: tag
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{mediaApi}}/api/v1/tags
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "tag_name": "example",
+      "media_id": 3
+  }
+}
+
+settings {
+  encodeUrl: true
+}

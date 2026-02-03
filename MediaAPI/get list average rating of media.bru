@@ -1,0 +1,15 @@
+meta {
+  name: get list average rating of media
+  type: http
+  seq: 22
+}
+
+get {
+  url: http://localhost:3000/api/v1/ratings/average/73
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

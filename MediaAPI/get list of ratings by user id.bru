@@ -1,0 +1,15 @@
+meta {
+  name: get list of ratings by user id
+  type: http
+  seq: 21
+}
+
+get {
+  url: http://localhost:3000/api/v1/ratings/byuser/7
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

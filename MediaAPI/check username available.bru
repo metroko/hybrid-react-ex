@@ -1,0 +1,15 @@
+meta {
+  name: check username available
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{authApi}}/api/v1/users/username/ilkka
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

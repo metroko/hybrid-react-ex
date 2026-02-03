@@ -1,0 +1,22 @@
+meta {
+  name: login
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{authApi}}/api/v1/auth/login
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "username": "ilkka",
+      "password": "your_password"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

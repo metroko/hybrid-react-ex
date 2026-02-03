@@ -1,0 +1,15 @@
+meta {
+  name: get list of users
+  type: http
+  seq: 23
+}
+
+get {
+  url: {{authApi}}/api/v1/users
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

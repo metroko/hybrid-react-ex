@@ -1,0 +1,19 @@
+meta {
+  name: check token
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{authApi}}/api/v1/users/token
+  body: none
+  auth: inherit
+}
+
+headers {
+  x-access-token: your_token.eyJ1c2VyX2lkIjozNjAxLCJ1c2VybmFtZSI6Imlsa2thbXRrIiwiZW1haWwiOiJpbGtrYW10a0BtZXRyb3BvbGlhLmZpIiwiZnVsbF9uYW1lIjpudWxsLCJpc19hZG1pbiI6bnVsbCwidGltZV9jcmVhdGVkIjoiMjAyMy0wOC0yNVQxMTo1NTozMi4wMDBaIiwiaWF0IjoxNjkzNTcwMzcwLCJleHAiOjE2OTM2NTY3NzB9.OWvW8NGNtHwcfjFYgWVBGiXOlCjXT4RfDf8XvIfzhwM
+}
+
+settings {
+  encodeUrl: true
+}

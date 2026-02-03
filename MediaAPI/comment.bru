@@ -1,0 +1,22 @@
+meta {
+  name: comment
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{mediaApi}}/api/v1/comments
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "comment_text": "Äääkkööösiii",
+      "media_id": "3"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

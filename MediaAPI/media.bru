@@ -1,0 +1,29 @@
+meta {
+  name: media
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{mediaApi}}/api/v1/media
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: your_token
+}
+
+body:json {
+  {
+      "title": "Example Video",
+      "description": "Example Description",
+      "filename": "your_token.eyJmaWxlbmFtZSI6IjIxZjE4ZWE3MTc0NTYxMzk0ODFmMThmYzNiZDhhYmY2IiwidXNlcl9pZCI6MiwiaWF0IjoxNzM4MDU2NzIxfQ.RZc-C0y79hQbaMUsk_AOpqDR_BDVRY424sNnRWAP6og.mov",
+      "media_type": "video/quicktime",
+      "filesize": 6383337
+  }
+}
+
+settings {
+  encodeUrl: true
+}
