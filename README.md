@@ -1,4 +1,4 @@
-Link to [site](https://users.metropolia.fi/~rogerko/hybrid/react-hooks/)
+Link to [site](https://users.metropolia.fi/~rogerko/hybrid/react-tailwind/)
 
 # React + TypeScript + Vite
 
